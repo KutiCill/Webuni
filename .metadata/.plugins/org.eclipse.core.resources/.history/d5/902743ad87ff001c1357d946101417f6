@@ -1,0 +1,21 @@
+package hu.webuni.airport;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class AirportApplication implements CommandLineRunner{
+
+	public static void main(String[] args) {
+		SpringApplication.run(AirportApplication.class, args);
+	}
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		}
+	
+	
+
+}

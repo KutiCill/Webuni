@@ -1,0 +1,8 @@
+package hu.webuni.airport.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "airport")
+public class AirtportConfigProperties {
+
+}

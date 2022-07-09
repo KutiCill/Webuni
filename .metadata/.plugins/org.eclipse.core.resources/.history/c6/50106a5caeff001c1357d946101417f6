@@ -1,0 +1,31 @@
+package hu.webuni.airport.service;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class SpecialDiscountService implements DiscountService{
+
+//	@Value("${airport.discount.default.percent}")
+//	private int defaultPercent;
+//	@Value("${airport.discount.special.precent}")
+//	private int specialPercent;
+//	@Value("${airport.discount.special.limit}")
+//	private int limit;
+//	
+	@Autowired
+	AirportConfigProperties config;
+	
+	@Override
+	public int getDiscountPercent(int totalPrices) {
+		// TODO Auto-generated method stub
+//		return totalPrices > limit ? specialPercent : defaultPercent;
+		return totalPrices > hu.webuni.airport.config.get ;
+		
+	}
+	
+	
+
+}

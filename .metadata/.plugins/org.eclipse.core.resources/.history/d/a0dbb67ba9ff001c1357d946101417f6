@@ -1,0 +1,4 @@
+spring.profiles.active=prod
+airport.discount.default.percent=10
+airport.discount.special.precent=15
+airport.discount.special.limit=10000

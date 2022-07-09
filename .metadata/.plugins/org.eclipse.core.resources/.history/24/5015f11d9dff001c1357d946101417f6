@@ -1,0 +1,16 @@
+package hu.webuni.airport.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import hu.webuni.airport.service.DeaultDiscountService;
+import hu.webuni.airport.service.DiscountService;
+
+@Configuration
+public class DiscountConfiguration {
+
+	@Bean
+    public DiscountService discountService() {
+        return new DeaultDiscountService();
+    }
+}

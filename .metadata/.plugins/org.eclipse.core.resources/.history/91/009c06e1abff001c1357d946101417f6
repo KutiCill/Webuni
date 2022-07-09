@@ -1,0 +1,22 @@
+package hu.webuni.airport.config;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+@ConfigurationProperties(prefix = "airport")
+public class AirtportConfigProperties {
+
+	private Discout discout = new Discout();
+	
+	public static class Discount{
+		private Default def = new Default();
+		private Special special = new Special();
+	}
+	public static class Default{
+		private int percent;
+	}
+	
+	public static class Special{
+		private int precent;
+		private int limit;
+	}
+}

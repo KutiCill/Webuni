@@ -1,0 +1,15 @@
+package hu.webuni.airport.service;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+@Qualifier
+@Service
+public class DeaultDiscountService implements DiscountService {
+
+	@Override
+	public int getDiscountPercent(int totalPrices) {
+		return 10;
+	}
+	
+
+}

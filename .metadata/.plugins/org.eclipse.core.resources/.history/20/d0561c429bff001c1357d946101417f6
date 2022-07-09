@@ -1,0 +1,17 @@
+package hu.webuni.airport.service;
+
+import org.springframework.context.annotation.Lazy;
+import org.springframework.stereotype.Service;
+
+@Service
+public class SpecialDiscountService implements DiscountService{
+
+	@Override
+	public int getDiscountPercent(@Lazy int totalPrices) {
+		// TODO Auto-generated method stub
+		return totalPrices > 10000 ? 15 : 10;
+	}
+	
+	
+
+}

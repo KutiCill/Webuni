@@ -1,0 +1,12 @@
+package hu.webuni.airport.service;
+
+public class DeaultDiscountService implements DiscountService {
+
+	@Override
+	public int getDiscountPercent(int totalPrices) {
+		// TODO Auto-generated method stub
+		return 10;
+	}
+	
+
+}
