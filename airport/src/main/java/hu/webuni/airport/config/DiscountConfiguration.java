@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-import hu.webuni.airport.service.DeaultDiscountService;
+import hu.webuni.airport.service.DefaultDiscountService;
 import hu.webuni.airport.service.DiscountService;
 
 @Configuration
@@ -13,6 +13,6 @@ public class DiscountConfiguration {
 
 	@Bean
     public DiscountService discountService() {
-        return new DeaultDiscountService();
+        return new DefaultDiscountService();
     }
 }

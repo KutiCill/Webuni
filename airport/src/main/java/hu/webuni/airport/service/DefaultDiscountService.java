@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import hu.webuni.airport.config.AirtportConfigProperties;
 
 @Service
-public class DeaultDiscountService implements DiscountService {
+public class DefaultDiscountService implements DiscountService {
 @Autowired
 	AirtportConfigProperties config;
 	
